@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+} 
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   
+    background-image: url('oldman.jpeg');
+   background-size: cover;
+   min-height: 100vh; 
+   
+
+
+   
+}
+  header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 30px 50px;
+    
+    display: flex;
+    height: 15vh;
+    justify-content:space-between;
+    
+    background-color: rgb(255, 255, 255);
+    
+    
+    
+    align-items: center;
+    z-index: 99;
+   
+}
+.logo{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+    
+}
+.navigation a{
+    display: inline-block;
+    position:relative;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    z-index: 101;
+    text-decoration: none;
+    font-weight:500;
+    margin-left: 40px;
+    padding: 10px 10px;
+    
+
+}
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-left: 4px;
+    z-index: 101;
+    transition: 0.5;
+    
+
+}
+.navigation .btnLogin-popup:hover{
+    background: rgb(0, 0, 0);
+    color: #fdfdfd;
+    
+}
+.navigation a::after{
+    content: '';
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 100%;
+    height: 3px;
+    z-index: 101;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+.navigation a:hover::after
+{
+   
+    transform: scaleX(1);
+    transform-origin: left;
+    z-index: 101;
+   
+}
+.big-box{
+    
+    height: 450px;
+    width: 1300px;
+    display: flex;
+    /* align-items:end; */
+    /* background-color: #000000; */
+    padding-top: 50px;
+    padding-left: 100px;
+    z-index: 101;
+    /* margin-top: 50px; */
+    /* margin-right: 200px; */
+    /* background-color: #000000;  */
+    margin-right: 100px;
+    
+    
+}
+  .a{
+    position: relative;
+    bottom: 20px;
+    height:25px;
+    border: solid;
+    border-color: rgb(32, 79, 117);
+   background-color: rgb(32, 79, 117);
+  }
+  .top{
+    position: absolute;
+    /* align-items: top; */
+    top: 43%;
+    padding: 15px ;
+    margin-right: 55%;
+
+    margin-top: 100px;
+    justify-content:space-between;
+    font-weight:bold;
+    color: white;
+    background-color: rgb(9, 46, 72);
+    display: flex;
+    z-index: 90;
+  }
+  .bigbox{
+    position: absolute;
+    /* align-items: top; */
+    top: 1%;
+
+    margin-top: 100px;
+    padding: 190px 768px;
+    /* background-color: black; */
+    /* background-image: url('oldman.jpeg');
+    background-size: cover; */
+  
+    
+  }
+  .downbox{
+    position: absolute;
+    /* align-items: top; */
+    top: 62%;
+
+    
+    padding: 400px 768px;
+    background-color: rgb(255, 255, 255);
+
+  }
+  /* .textbox{
+    position: absolute;
+    top: 73%;
+    padding: 300px 550px;
+    right: 20%;
+    margin-left: 30%;
+
+    z-index: 100;
+    opacity: 0.5;
+    background-color: blue;
+    
+
+  }
+  .para{
+    position: absolute;
+    top: 73%;
+    padding: 300px 550px;
+    right: 20%;
+    margin-left: 30%;
+
+    z-index: 100;
+
+    
+  } */
+   .para{
+    position: absolute;
+    /* align-items: center; */
+    top: 75%;
+   left: 0%;
+     
+   padding: 40px 160px;
+   font-weight: 400;
+   font-size: medium;
+   
+
+   }
+   .bold{
+    position: absolute;
+    top: 110%;
+    text-decoration: solid;
+    color: rgb(108, 106, 106);
+    font-size: large;
+    font-weight: 600;
+    
+    
+   }
+   .icons{
+    position: absolute;
+    top:72%;
+    right: 5%;
+    padding: 90px 180px;
+     /* background-color: black;  */
+
+
+   }
+   .data{
+    position: absolute;
+    top: 130%;
+    padding: 250px 715px;
+    background-color:rgb(238, 239, 241);
+    border-style: outset;
+   
+
+   }
+   .helping{
+    position: absolute;
+    /* top: 110%; */
+    top: 0%;
+   left: 7%;
+    padding: 50px 200px;
+    white-space: nowrap;
+    font-weight: 600;
+    
+    /* background-color: rgb(0, 0, 0);  */
+    /* color: black;
+    
+    font-size: large;
+    size: 300px; */
+    /* z-index: 103; */
+    
+   }
+   .letter{
+    position: absolute;
+    top: 60px;
+    left: 6%;
+    padding: 50px 200px;
+    color: rgb(72, 58, 58);
+   }
+   .button
+   {
+  font-family: Poppins;
+  background-color:  #c8ddf3;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: 5px,5px,15px,#888888;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.highlight{
+  position: absolute;
+  left: 10%;
+  top: 70%;
+  font-weight: 600;
+  color: rgb(108, 106, 106);
+
+
+}
+.difcol{
+  position: absolute;
+  top: 78%;
+  color:  #bed9f6;
+}
+.per1{
+  position: absolute;
+  top: 75%;
+  left: 33%;
+
+}
+.sen1{
+  position: absolute;
+  top: 78%;
+  left: 38%;
+  color:  #151c23;
+  opacity: 0.7;
+  font-weight: 600;
+}
+.vl {
+  border-left: 3px solid rgb(0, 0, 0);
+  opacity: 0.3;
+  top: 73%;
+  height: 70px;
+  position: absolute;
+  margin-left: -3px;
+  left: 53%;
+
+}
+.per2{
+  left:55%;
+}
+.sen2{
+  left:60%;
+}
+
+   
+
+
+
+</style>
+<body>
+  <header>
+    <h2 class="logo"><img src="logo4.png" alt="image" height="150px" style="margin-top: 30px;"></h2>
+    <nav class="navigation"> 
+        <a href="login.html">Home</a>
+        <a href="#">Medicines</a>
+        <a href="gov scheme.html">Gov Scheme</a>
+        <a href="#">Dignose</a>
+        <a href="#">Appointment</a>
+        
+        <a href="#">Fund raiser</a>
+        <a href="contact.html">Contact</a>
+
+        <button class="btnLogin-popup">Login</button>
+    
+    </header>
+    <h1 class="top">About  Medlyfe  Healthcare</h1>
+    <div class="bigbox">
+      <div class="smallbox"> 
+
+      </div>
+    </div>
+    <div class="downbox">
+    
+      <div class="iconbox"></div>
+    </div>
+    <div class="textbox"> <p class="para">Medlyfe  is a national nonprofit, based in Madhya Pradesh, India, that’s <br> Started as a hackathon project just recently few weeks ago  <br>
+        <br>
+      We believe everyone should have the opportunity to use technology to improve their <br> lives, families, and communities — no matter who they are, where they live, or how they begin. <br>
+      <br>
+      We work at the community, state, and federal levels and with both public and private <br> partners to work toward the common and important goal of expanding access, <br> adoption, and use of broadband to ALL people. </p>
+      <p class="para bold">Everyone belongs in a connected National  </p>
+      <div class="icons" style="font-size: 9em;"><ion-icon name="logo-no-smoking"></ion-icon></div>
+    </div>
+    <div class="data">
+      <h1 class="helping">Helping communities and states close the Digital Divide. <br></h1>
+        <p class="letter">The pandemic created a new understanding of the importance of connecting every individual, family, and community. As a result, there is now an unprecedented level of funding and priority for expanding access, adoption, and use of broadband (high-speed internet) and its related technologies. </p>
+        <button class="button">Connect</button>
+        <h1 class="highlight">Who lacks </h1>
+        <h1 class="highlight difcol">Healthcare ?</h1>
+        <h1 class="highlight per1"> 43%</h1>
+        <h4 class="per1 sen1">of low income families</h4>
+        <div class="per1 sen1 vl"></div>
+        <h1 class="highlight per1 per2">20%</h1>
+        <h4 class="per1 sen1 sen2">of tribal resident </h4>
+        <div class="per1 sen1 vl" style="left:72%"> </div>
+        <h1 class="highlight per1" style="left:74%"> 16.9</h1>
+        <h4 class="per1 sen1" style="left:79% ;">million school-aged children</h4>
+
+
+
+
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

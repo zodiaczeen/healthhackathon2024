@@ -1,0 +1,37 @@
+ *{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+#header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 30px 50px;
+    
+    display: flex;
+    height: 15vh;
+    justify-content:space-between;
+    background-color: rgb(70, 70, 158);
+    color: antiquewhite;
+    
+    
+}
+.allskill{
+    text-align: center;
+    background-color: rgb(85, 185, 215);
+    color: antiquewhite;
+    width: 100vw;
+      padding: 175px 50px;
+    background-color: black;
+    
+    text-align: center;
+
+
+}
+    
+    
+
